@@ -1,0 +1,328 @@
+/* custom properties */
+:root {
+    --p-tekst-color: #000000;
+    --background-color: #ffffff;
+    --Sub-title: #0050C2;
+    --unimportant-text: gray;
+  }
+  
+  /* --lightblue: #7faec5;
+  --background: #fafafa;
+  --green: #4ecd5d;
+  --darkblue: #384b61;
+  --darkerblue: #0E373F;
+  --darkgreen: #006319;
+  --lightgreen: #9CD67D; */
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    padding: 0 0 1em 0;
+    padding: bottom;
+    margin: 0;
+    /* padding: ; */
+    height: 100vh;
+    background-image: url(assets/netherlands-leeuwarden-d6389d59940f4b0fa23b2297d4392f0d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  .header {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    width: 100px;
+    height: 100%;
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    width: 10vw;
+    height: auto;
+  }
+  
+  /* menu */
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  /* menu icon */
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    display: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 1em;
+  }
+  
+  .image-container img {
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 1em;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .text-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    margin-right: 12px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-top: 72px;
+  }
+  
+  .hero button {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .h2-subtitle {
+    color: var(--Sub-title);
+  }
+  
+  .awesome-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .awesome-article .image-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .awesome-article .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .awesome-article .image-wrapper img:hover {
+    transform: scale(1.1);
+  }
+  
+  .awesome-article .content {
+    width: 40%;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .awesome-article h2 {
+    color: var(--Sub-title);
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .awesome-article p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .awesome-article .explore-btn {
+    padding: 10px 20px;
+    background-color: var(--Sub-title);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .awesome-article .explore-btn:hover {
+    background-color: #004080;
+  }
+  
+  .article.info {
+    background-color: #0050C2;
+    
+  }
+  
+  .h2.sub1 {
+    color: var(--Sub-title);
+  }
+  
+  /* footer */
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  footer a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      padding: 10px;
+    }
+  
+    footer p {
+      font-size: 12px;
+    }
+  }
+  

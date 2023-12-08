@@ -30,6 +30,7 @@
 
 
 <main>
+
   <div class="hero">
     <h1>b-Rain</h1>
     <p>Klimaatadaptief met regen.</p>
@@ -81,29 +82,29 @@
 
   <section class="wat">
     <h2>Wat is bRAIN?</h2>
-    <div class="flip-card">
-    <div class="image-wat-1">
-      <img src="">
-      <img src="">
-    </div>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    <div class="maincontainer">
+      <div class="image-wat-1">
+        <img src="">
+        <img src="">
+      </div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
       Nisi natus ipsum, laudantium iste, 
       harum modi aut inventore impedit possimus voluptate ex aspernatur 
       omnis itaque maiores quisquam. Doloribus minima ipsa fuga.
-    </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
       Voluptatibus a earum porro autem officia cupiditate, 
       dicta veritatis, mollitia eaque hic quia. 
       Consequatur fuga voluptatum consectetur, 
       voluptatibus voluptates quidem quasi veritatis.
-    </p>
-    <div class="image-wat-2">
-      <div>
-        <img src="assets/download.jpg" alt="flooded">
-      </div>
-      <div>
-        <img src="assets/images.jpg" alt="driedup">
-      </div>
+      </p>
+      <div class="card">
+        <div class="front">
+          <img src="assets/download.jpg" alt="flooded">
+        </div>
+        <div class="back">
+          <img src="assets/images.jpg" alt="driedup">
+        </div>
       </div>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
       Error facere officiis porro in dolorem temporibus, 
@@ -115,7 +116,13 @@
 </main>
 
 <script>
+  const card = document.querySelector(".card")
 
+  card.addEventListener("click", flipCard);
+
+  function flipCard(front, back) {
+    card.classList.toggle("flipCard")
+  }
 </script>
 
 <footer>

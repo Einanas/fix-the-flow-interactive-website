@@ -4,15 +4,18 @@
     --background-color: #ffffff;
     --Sub-title: #0050C2;
     --unimportant-text: gray;
+
+    /* b-Rain huisstijl kleuren */
+    --lightblue: #7faec5;
+    --background: #fafafa;
+    --green: #4ecd5d;
+    --darkblue: #384b61;
+    --darkerblue: #0E373F;
+    --darkgreen: #006319;
+    --lightgreen: #9CD67D;
   }
   
-  /* --lightblue: #7faec5;
-  --background: #fafafa;
-  --green: #4ecd5d;
-  --darkblue: #384b61;
-  --darkerblue: #0E373F;
-  --darkgreen: #006319;
-  --lightgreen: #9CD67D; */
+  
   
   * {
     box-sizing: border-box;
@@ -294,6 +297,24 @@
   .h2.sub1 {
     color: var(--Sub-title);
   }
+
+  /* Wat is b-RAIN? */
+
+  .wat {
+    height: 100vh;
+    color: #000;
+    display: grid;
+  }
+
+  .wat  .image-wat-2 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
   
   /* footer */
   footer {

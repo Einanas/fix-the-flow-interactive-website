@@ -8,6 +8,19 @@ interaction.forEach(interaction => {
   })
 });
 
+
+//       NAVIGATON BAR CHANGE BY CLICK         //
+const Active = document.querySelectorAll('li');
+
+Active.forEach((btn) => {
+  Active.addEventListener("click", (e) => {
+    Active.forEach(f => f.classList.remove('active'));
+    e.target.classList.toggle("active");
+  });
+});
+
+console.log('li')
+
 // In plaats van flipcard, afbeelding laten verschijnen.
 // twee afbeeldingen op één plek
 // opacity met klik

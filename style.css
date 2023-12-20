@@ -15,6 +15,9 @@
   --lightgreen: #9CD67D;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 * {
@@ -22,6 +25,18 @@
   margin: 0;
   padding: 0;
 }
+
+.active {
+  background-color: var(--darkerblue);
+  color: var(--lightgreen);
+
+}
+
+li.active a {
+  color: var(--lightgreen);
+}
+
+
 
 body {
   padding: 0 0 1em 0;

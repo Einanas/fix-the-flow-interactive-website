@@ -63,6 +63,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
+  height: 4em;
 }
 
 .header ul {
@@ -75,15 +76,17 @@ a {
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 0px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  height: 4em;
 }
 
-/* .header li a:hover,
+.header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
-} */
+  background-color: var(--lightgreen);
+  color: var(--darkerblue);
+}
 
 .header .logo {
   width: 100px;
@@ -96,7 +99,7 @@ a {
 }
 
 .logo img {
-  width: 10vw;
+  width: 8vw;
   height: auto;
 }
 
@@ -192,10 +195,8 @@ a {
   }
 }
 
-
-
 /* Intro */
-.image-container {
+ .image-container {
   display: flex;
   justify-content: space-between;
   margin: 20px;
@@ -327,7 +328,7 @@ a {
 
 .h2.sub1 {
   color: var(--Sub-title);
-}
+} 
 
 
 
@@ -338,12 +339,13 @@ a {
 
 /* Wat is b-RAIN? */
 
-.wat2 {
+ .wat2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
   padding: 20px;
+  height: 100vh;
 }
 
 .wat2 .sub1 {
@@ -351,26 +353,41 @@ a {
   font-size: 2rem;
 }
 
-.wat2 p {
-  font-size: 1rem;
+.text2 {
+  font-size: 18px;
   line-height: 1.5;
   color: #555;
+  max-width: 75ch;
+  margin: auto;
 }
 
 .wat2 .card {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+  width: 40%;
 }
 
 .wat2 .card .front,
 .wat2 .card .back {
-  width: 50%;
+  width: 100%;
   padding: 1em;
+}
+.wat2 .card .back{
+  margin-left: -1.5em;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wat2 .card img {
-  max-width: 100%;
-  height: auto;
+  max-width: 450px;
+  height: 300px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -382,14 +399,34 @@ a {
 
 
 
+
 .flipCard {
   transform: rotateY(180deg)
 }
 
+ */
+
+
+/*  Waarom Section */
+
+.waarom2 {
+  height: 100vh;
+}
+
+.waarom2 .sub2 {
+  color: var(--Sub-title);
+  font-size: 2rem;
+}
+
+
+
+
+
+
 
 /* footer */
 footer {
-  position: sticky;
+  position: flexed;
   bottom: 0;
   width: 100%;
   background-color: #f8f9fa;

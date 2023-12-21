@@ -10,16 +10,17 @@ interaction.forEach(interaction => {
 
 
 //       NAVIGATON BAR CHANGE BY CLICK         //
-const Active = document.querySelectorAll('li');
+const changeItems = document.querySelectorAll('li.change a');
 
-Active.forEach((btn) => {
-  Active.addEventListener("click", (e) => {
-    Active.forEach(f => f.classList.remove('active'));
-    e.target.classList.toggle("active");
+changeItems.forEach((anchor) => {
+  anchor.addEventListener("click", (e) => {
+    e.preventDefault(); // Voorkom standaardgedrag van de link
+    changeItems.forEach(item => item.classList.remove('active'));
+    anchor.classList.add("active");
   });
 });
 
-console.log('li')
+console.log('li.change a');
 
 // In plaats van flipcard, afbeelding laten verschijnen.
 // twee afbeeldingen op één plek

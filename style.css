@@ -345,7 +345,7 @@ a {
   align-items: center; 
   text-align: left;
   padding: 20px;
-  height: 100vh;
+  height: 120vh;
 }
 
 .wat2 .sub1 {
@@ -410,7 +410,12 @@ img {
 /*  Waarom Section */
 
 .waarom2 {
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
 }
 
 .waarom2 .sub2 {
@@ -418,9 +423,71 @@ img {
   font-size: 2rem;
 }
 
+.waarom2 p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+/*    b-RAIN app */
+
+.app2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
+}
+
+.app2 h2 {
+  color: var(--Sub-title);
+  font-size: 2rem;
+}
+
+.app2 p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
 
 
 
+/*     Contact    */
+
+.contact2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
+}
+
+.contact2 h {
+  color: var(--Sub-title);
+  font-size: 2rem;
+}
+
+
+
+
+/*    Over ons    */
+
+.overons {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
+}
+
+.overons h {
+  color: var(--Sub-title);
+  font-size: 2rem;
+}
 
 
 

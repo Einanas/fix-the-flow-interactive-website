@@ -44,7 +44,9 @@ body {
   margin: 0;
   /* padding: ; */
   height: 100vh;
-  background-image: url(/assets/netherlands-leeuwarden-d6389d59940f4b0fa23b2297d4392f0d.jpg);
+  background: seagreen;
+  background: url(assets/Rainwater-Barrel-Gardening-A108549998.jpg) ;
+  /* background-image: url(assets/Rainwater-Barrel-Gardening-A108549998.jpg) alt="The rain beign cathed into a barrel in a beautiful garden"; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

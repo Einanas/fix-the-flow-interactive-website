@@ -17,27 +17,27 @@
 
 
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-padding: 0 0 1em 0;
-padding: bottom;
-margin: 0;
-height: 100vh;
-background: seagreen;
-background: url(assets/Rainwater-Barrel-Gardening-A108549998.jpg) ;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-font-family: 'Lato', sans-serif;
-color: #ffffff;
+  padding: 0 0 1em 0;
+  padding: bottom;
+  margin: 0;
+  height: 100vh;
+  background: seagreen;
+  background: url(assets/Rainwater-Barrel-Gardening-A108549998.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
 }
 
 
@@ -48,23 +48,25 @@ color: #ffffff;
 
 /*     The whole menu balk    */
 header {
-background-color: #ffffff;
-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-position: fixed;
-width: 100%;
-z-index: 3;
-height: 4em;
+  /* background-color: #ffffff; */
+  /* background-color: #791212; */
+  backdrop-filter: blur(20px);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  height: 6em;
 }
 
 /*     Media Query for the header     */
-@media (min-width: 48em) {
+/* @media (min-width: 48em) {
 
 .header li {
   float: left;
 }
 .header li a {
   padding: 20px 30px;
-}
+} */
 /* By max width menu is on the right  */
 .header .menu {
   clear: none;
@@ -74,58 +76,58 @@ height: 4em;
 .header .menu-icon {
   display: none;
 }
-}
 
 
 /*     Logo in the header     */
 .header .logo {
-width: 100px;
-height: 100%;
-display: block;
-float: left;
-font-size: 2em;
-padding: 10px 20px;
-text-decoration: none;
+  width: 300px;
+  height: 100%;
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 /*      Logo image      */
 .logo img {
-width: 8vw;
-height: auto;
+  /* width: 8vw; */
+  width: 150px;
+  height: 70px;
 }
 
 
 /*      Menu icon symbol    */
-.header .menu-icon {
-cursor: pointer;
-display: inline-block;
-display: right;
-padding: 28px 20px;
-position: relative;
-user-select: none;
-}
+/* .header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  display: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+} */
 
 /*     BEFORE the menu icon shows and what happens WHEN it shows  */
-.header .menu-icon .navicon:before,
+/* .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-background: #333;
-content: '';
-display: block;
-height: 100%;
-position: absolute;
-transition: all 0.2s ease-out;
-width: 100%;
-}
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+} */
 
 /*      Placement BEFORE and AFTER the menu icon shows */
-.header .menu-icon .navicon:before {
+/* .header .menu-icon .navicon:before {
 top: 5px;
 }  
 .header .menu-icon .navicon:after {
 top: -5px;
-}
+} */
 
 /*       Similar to keyframes but worked out differently for a EFFING ICON!!!!! */
-.header .menu-btn {
+/* .header .menu-btn {
 display: none;
 }
 
@@ -148,90 +150,90 @@ transform: rotate(45deg);
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
 top: 0;
-}
+} */
 
 
 
 /*      The Menu   (the whole menu (all the li))     */
 .header .menu {
-clear: both;
-max-height: 0;
-transition: max-height .2s ease-out;
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
 /*       The whole menu buttons    */
 .header ul {
-margin: 0;
-padding: 0;
-list-style: none;
-overflow: hidden;
-background-color: #fff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #791212;
 }
 
 
 /*      Menu button individual    */
 .header li a {
-display: block;
-padding: 0px 20px;
-border-right: 1px solid #f4f4f4;
-text-decoration: none;
-height: 4em;
+  display: block;
+  padding: 0px 20px;
+  border-right: 1px solid #ec2525;
+  text-decoration: none;
+  height: 4em;
 }
 
 
 /*      Menu button change by hover function   */
 .header li a:hover,
 .header .menu-btn:hover {
-background-color: var(--lightgreen);
-color: var(--darkerblue);
+  background-color: var(--lightgreen);
+  color: var(--darkerblue);
 }
 
 /*     Menu button individual --> The color of the menu button by clicking    */
 a {
-color: #000;
+  color: #000;
 }
 
-.active {
+/* .active {
 background-color: var(--darkerblue);
 color: var(--lightgreen);  
 }
 
 li.active a {
 color: var(--lightgreen);
-}
+} */
 
 
 
 
 /*      ZE FIRZT WORDS ON ZE LANDINGPAGE OF B-RAIN      */
 .hero {
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;
-text-align: center;
-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
 }
 
 
 /*      The title in big letters       */
 .hero h1 {
-font-size: 8rem;
-font-weight: bold;
-margin-right: 12px;
+  font-size: 8rem;
+  font-weight: bold;
+  margin-right: 12px;
 }
 /*      Small info on b-rain     */
 .hero p {
-font-size: 1.5rem;
-margin-top: 72px;
+  font-size: 1.5rem;
+  margin-top: 72px;
 }
 /*       ????????       */
 .hero button {
-padding: 1rem 2rem;
-background-color: #007bff;
-color: white;
-border: none;
-cursor: pointer;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 
@@ -242,26 +244,26 @@ cursor: pointer;
 
 /*     1st: The introductie part    */
 .awesome-article {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 40px;
-animation: fadeInUp 1s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+  animation: fadeInUp 1s ease-out;
 }
 
 
 /*       Image container       */
 .image-container {
-display: flex;
-justify-content: space-between;
-margin: 20px;
-padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 1em;
 }
 /*      the placement of the image container??? */
 .awesome-article .image-container {
-display: flex;
-justify-content: space-around;
-width: 50%;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
 }
 /*      Adjustment on the pictures itself      */
 .image-container img {
@@ -286,7 +288,7 @@ width: 50%;
   transform: scale(1.1);
 }
 .awesome-article .image-wrapper img:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 /*      The keyframes for the animation of the images      */
 @keyframes fadeInUp {
@@ -302,10 +304,6 @@ transform: scale(1.1);
 
 
 /*      The subtitle before the text     */
-.h2-subtitle {
-color: var(--Sub-title);
-}
-
 .awesome-article h2 {
   color: var(--Sub-title);
   font-size: 2rem;
@@ -315,58 +313,25 @@ color: var(--Sub-title);
 
 /*      The said text       */
 .awesome-article .content {
-width: 40%;
-text-align: left;
-padding: 20px;
+  width: 40%;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
 }
-
-.awesome-article p {
-font-size: 18px;
-line-height: 1.5;
-color: #555;
-}
-
-
-
-
-/*      ??????       */
-.text-container {
-text-align: center;
-margin-top: 10px;
-}
-
-.awesome-article .explore-btn {
-  padding: 10px 20px;
-  background-color: var(--Sub-title);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.awesome-article .explore-btn:hover {
-  background-color: #004080;
-}
-
-.article.info {
-  background-color: #0050C2;
-}
-
-
-
 
 
 
 
 /*       2nd: The Wat is b-RAIN part      */
 .wat2 {
-display: flex;
-flex-direction: row;
-align-items: center; 
-text-align: left;
-padding: 20px;
-height: 120vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
 }
 
 
@@ -376,64 +341,56 @@ height: 120vh;
   font-size: 2rem;
 }
 
-.h2.sub1 {
-  color: var(--Sub-title);
-} 
-
 
 /*          The paragraph text          */
 .text2 {
-font-size: 18px;
-line-height: 1.5;
-color: #555;
-max-width: 75ch;
-margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+  max-width: 75ch;
+  margin: auto;
 }
 
 
 /*         The image container        */
 .wat2 .card {
-display: flex;
-flex-direction: column;
-justify-content: center;
-place-content: center;
-margin-left: auto;
-margin-right: auto;
-margin-top: 20px;
-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 40%;
 }
 
 /*          The adjustment of the foto's  individual       */
-.wat2 .card .front,
-.wat2 .card .back {
-width: 100%;
-padding: 1em;
-}
-.wat2 .card .back{
-margin-left: -1.5em;
-}
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
+}
+.wat2 .card img {
+  max-width: 450px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.wat2 .card img {
-max-width: 450px;
-height: 300px;
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease-in-out;
+.wat2 .card .front,
+.wat2 .card .back {
+  width: 100%;
+  padding: 1em;
 }
+.wat2 .card .back{
+  margin-left: -1.5em;
+}
+
+
 
 /*      Scaling by hovering over the images */
 .wat2 .card img:hover {
-transform: scale(1.1);
-}
-
-
-/*    ??????????? */
-.flipCard {
-  transform: rotateY(180deg)
+  transform: scale(1.1);
 }
 
 
@@ -441,19 +398,19 @@ transform: scale(1.1);
 
 /*        3rd: The Waarom b-RAIN part         */
 .waarom2 {
-display: flex;
-flex-direction: row;
-align-items: center; 
-text-align: left;
-padding: 20px;
-height: 120vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
 }
 
 
 /*         The subtitle         */
 .waarom2 .sub2 {
-color: var(--Sub-title);
-font-size: 2rem;
+  color: var(--Sub-title);
+  font-size: 2rem;
 }
 
 
@@ -477,16 +434,16 @@ font-size: 2rem;
 
 /*         The subtitle       */
 .app2 h2 {
-color: var(--Sub-title);
-font-size: 2rem;
+  color: var(--Sub-title);
+  font-size: 2rem;
 }
 
 
 /*         The text          */
 .app2 p {
-font-size: 18px;
-line-height: 1.5;
-color: #555
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555
 }
 
 
@@ -494,12 +451,12 @@ color: #555
 
 /*        5th: The Contact part         */
 .contact2 {
-display: flex;
-flex-direction: row;
-align-items: center; 
-text-align: left;
-padding: 20px;
-height: 120vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
 }
 
 
@@ -514,19 +471,19 @@ height: 120vh;
 
  /*        6th: The Over ons part         */
 .overons {
-display: flex;
-flex-direction: row;
-align-items: center; 
-text-align: left;
-padding: 20px;
-height: 120vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: left;
+  padding: 20px;
+  height: 120vh;
 }
 
 
 /*           The subtitle         */
 .overons h {
-color: var(--Sub-title);
-font-size: 2rem;
+  color: var(--Sub-title);
+  font-size: 2rem;
 }
 
 
@@ -534,12 +491,12 @@ font-size: 2rem;
 
 /*        ZE BOTTOM OF ZE PAGE!!:  ZE FOOTERR         */
 footer {
-position: flexed;
-bottom: 0;
-width: 100%;
-background-color: #f8f9fa;
-padding: 20px;
-text-align: center;
+  position: flexed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
 }
 
 
@@ -553,18 +510,11 @@ footer p {
 
 /*          Media Query on the footer       */
 @media (max-width: 768px) {    
-footer {
-  padding: 10px;
-}
+  footer {
+    padding: 10px;
+  }
 
-footer p {
-  font-size: 12px;
-}
-}
-
-
-/*  ??????????? */
-footer a {
-  color: #000;
-  text-decoration: none;
+  footer p {
+    font-size: 12px;
+  }
 }

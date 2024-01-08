@@ -32,12 +32,16 @@ body {
   margin: 0;
   height: 100vh;
   background: seagreen;
-  background: url(assets/Rainwater-Barrel-Gardening-A108549998.jpg) ;
+  background: url(assets/Rainwater-Barrel-Gardening-A108549998.jpg);
+  /* background-filter: brightness(80%); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: 'Lato', sans-serif;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 1080px) {
 }
 
 
@@ -51,6 +55,7 @@ header {
   /* background-color: #ffffff; */
   /* background-color: #791212; */
   backdrop-filter: blur(20px);
+  /* filter: brightness(80%); */
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;

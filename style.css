@@ -1,4 +1,5 @@
 /* custom properties */
+/* custom properties */
 :root {
   --p-tekst-color: #000000;
   --background-color: #ffffff;
@@ -15,15 +16,15 @@
   --lightgreen: #9CD67D;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .active {
@@ -197,32 +198,7 @@ a {
   }
 }
 
-/* Intro */
- .image-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  padding: 1em;
-}
-
-.image-container img {
-  max-width: 48%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  padding: 1em;
-}
-
-.image-container img:hover {
-  transform: scale(1.1);
-}
-
-.text-container {
-  text-align: center;
-  margin-top: 10px;
-}
-
+/*      ZE FIRZT WORDS ON ZE LANDINGPAGE OF B-RAIN      */
 .hero {
   display: flex;
   align-items: center;
@@ -232,17 +208,19 @@ a {
   color: white;
 }
 
+
+/*      The title in big letters       */
 .hero h1 {
   font-size: 8rem;
   font-weight: bold;
   margin-right: 12px;
 }
-
+/*      Small info on b-rain     */
 .hero p {
   font-size: 1.5rem;
   margin-top: 72px;
 }
-
+/*       ????????       */
 .hero button {
   padding: 1rem 2rem;
   background-color: #007bff;
@@ -251,10 +229,13 @@ a {
   cursor: pointer;
 }
 
-.h2-subtitle {
-  color: var(--Sub-title);
-}
 
+
+
+/*     ZE CONTENT OF ZE PAGE LIKE ZE PICTUREZ AND ZE TEXT!!!! */
+
+
+/*     1st: The introductie part    */
 .awesome-article {
   display: flex;
   justify-content: space-between;
@@ -263,23 +244,31 @@ a {
   animation: fadeInUp 1s ease-out;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/*       Image container       */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 1em;
 }
+/*      the placement of the image container??? */
 .awesome-article .image-container {
   display: flex;
   justify-content: space-around;
   width: 50%;
 }
+/*      Adjustment on the pictures itself      */
+.image-container img {
+  max-width: 48%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 1em;
+}
 
+/*      Individual pictures adjustment     */
 .awesome-article .image-wrapper img {
   max-width: 100%;
   height: auto;
@@ -287,61 +276,49 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
-
+/*      Image changes size by hover      */
+.image-container img:hover {
+  transform: scale(1.1);
+}
 .awesome-article .image-wrapper img:hover {
   transform: scale(1.1);
 }
-
-.awesome-article .content {
-  width: 40%;
-  text-align: left;
-  padding: 20px;
+/*      The keyframes for the animation of the images      */
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    transform: translateY(20px);
+} 
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
 }
 
+
+/*      The subtitle before the text     */
 .awesome-article h2 {
   color: var(--Sub-title);
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.awesome-article p {
+
+/*      The said text       */
+.awesome-article .content {
+  width: 40%;
+  text-align: left;
+  padding: 20px;
   font-size: 18px;
   line-height: 1.5;
   color: #555;
 }
 
-.awesome-article .explore-btn {
-  padding: 10px 20px;
-  background-color: var(--Sub-title);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.awesome-article .explore-btn:hover {
-  background-color: #004080;
-}
-
-.article.info {
-  background-color: #0050C2;
-}
-
-.h2.sub1 {
-  color: var(--Sub-title);
-} 
 
 
 
-
-
-
-
-
-/* Wat is b-RAIN? */
-
- .wat2 {
+/*       2nd: The Wat is b-RAIN part      */
+.wat2 {
   display: flex;
   flex-direction: row;
   align-items: center; 
@@ -350,11 +327,15 @@ a {
   height: 120vh;
 }
 
+
+/*         The Subtitle adjustment      */
 .wat2 .sub1 {
   color: var(--Sub-title);
   font-size: 2rem;
 }
 
+
+/*          The paragraph text          */
 .text2 {
   font-size: 18px;
   line-height: 1.5;
@@ -363,6 +344,8 @@ a {
   margin: auto;
 }
 
+
+/*         The image container        */
 .wat2 .card {
   display: flex;
   flex-direction: column;
@@ -374,19 +357,11 @@ a {
   width: 40%;
 }
 
-.wat2 .card .front,
-.wat2 .card .back {
-  width: 100%;
-  padding: 1em;
-}
-.wat2 .card .back{
-  margin-left: -1.5em;
-}
+/*          The adjustment of the foto's  individual       */
 img {
   max-width: 100%;
   height: auto;
 }
-
 .wat2 .card img {
   max-width: 450px;
   height: 300px;
@@ -395,6 +370,18 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
+.wat2 .card .front,
+.wat2 .card .back {
+  width: 100%;
+  padding: 1em;
+}
+.wat2 .card .back{
+  margin-left: -1.5em;
+}
+
+
+
+/*      Scaling by hovering over the images */
 .wat2 .card img:hover {
   transform: scale(1.1);
 }
@@ -402,15 +389,7 @@ img {
 
 
 
-.flipCard {
-  transform: rotateY(180deg)
-}
-
- */
-
-
-/*  Waarom Section */
-
+/*        3rd: The Waarom b-RAIN part         */
 .waarom2 {
   display: flex;
   flex-direction: row;
@@ -420,20 +399,22 @@ img {
   height: 120vh;
 }
 
+
+/*         The subtitle         */
 .waarom2 .sub2 {
   color: var(--Sub-title);
   font-size: 2rem;
 }
 
+
+/*         The text/content     */
 .waarom2 p {
   font-size: 18px;
   line-height: 1.5;
   color: #555;
 }
 
-
-/*    b-RAIN app */
-
+/*        4th: The b-RAIN app part         */
 .app2 {
   display: flex;
   flex-direction: row;
@@ -443,21 +424,25 @@ img {
   height: 120vh;
 }
 
+
+/*         The subtitle       */
 .app2 h2 {
   color: var(--Sub-title);
   font-size: 2rem;
 }
 
+
+/*         The text          */
 .app2 p {
   font-size: 18px;
   line-height: 1.5;
-  color: #555;
+  color: #555
 }
 
 
 
-/*     Contact    */
 
+/*        5th: The Contact part         */
 .contact2 {
   display: flex;
   flex-direction: row;
@@ -467,6 +452,8 @@ img {
   height: 120vh;
 }
 
+
+/*        The subtitle          */
 .contact2 h {
   color: var(--Sub-title);
   font-size: 2rem;
@@ -475,8 +462,7 @@ img {
 
 
 
-/*    Over ons    */
-
+ /*        6th: The Over ons part         */
 .overons {
   display: flex;
   flex-direction: row;
@@ -486,6 +472,8 @@ img {
   height: 120vh;
 }
 
+
+/*           The subtitle         */
 .overons h {
   color: var(--Sub-title);
   font-size: 2rem;
@@ -493,7 +481,8 @@ img {
 
 
 
-/* footer */
+
+/*        ZE BOTTOM OF ZE PAGE!!:  ZE FOOTERR         */
 footer {
   position: flexed;
   bottom: 0;
@@ -503,18 +492,17 @@ footer {
   text-align: center;
 }
 
+
+/*           Footer text          */
 footer p {
   margin: 0;
   font-size: 14px;
   color: #666;
 }
 
-footer a {
-  color: #000;
-  text-decoration: none;
-}
 
-@media (max-width: 768px) {
+/*          Media Query on the footer       */
+@media (max-width: 768px) {    
   footer {
     padding: 10px;
   }
